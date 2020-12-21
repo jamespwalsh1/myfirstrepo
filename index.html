@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James's Document</title>
+</head>
+
+<body>
+    <h6 id="myHeader"> My first web page!</h6>
+    <button id="myButton" onclick="{changeHeader()}">Click the button to change the header</button>
+    <script>
+        console.log("oopsies this is an error")
+        function changeHeader() {
+            let header = document.getElementById("myHeader")
+            header.innerHTML = "I am excited :)"
+            let otherHeader = document.createElement("h3")
+            otherHeader.innerHTML = "this is my other header"
+            document.body.appendChild(otherHeader)
+        }
+
+    </script>
+</body>
+
+</html>
